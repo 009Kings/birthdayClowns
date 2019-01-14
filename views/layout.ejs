@@ -20,9 +20,6 @@
               <li><a href="/auth/signup">Signup</a></li>
               <li><a href="/auth/Login">Login</a></li>
             <% } else { %>
-              <% if (user.admin) {%>
-                <li><a href="/profile/admins">Admin Page</a></li>
-              <% } %>
               <li><a href="/profile">Profile</a></li>
               <li>Hello <%= user.firstname %></li>
               <li><a href="/auth/logout">Logout</a></li>
@@ -35,9 +32,6 @@
         <li><a href="/auth/signup">Signup</a></li>
         <li><a href="/auth/Login">Login</a></li>
       <% } else { %>
-        <% if (user.admin) {%>
-          <li><a href="/profile/admins">Admin Page</a></li>
-        <% } %>
         <li><a href="/profile">Profile</a></li>
         <li><a href="/auth/logout">Logout</a></li>
       <% } %>
